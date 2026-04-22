@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscular Hacker | Bank Access</title>
+    <style>
+        /* THE BACKGROUND: Using a dark gradient to look like a vault or terminal */
+        body {
+            background: radial-gradient(circle, #0a1f1a 0%, #000000 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Courier New', Courier, monospace; /* Hacker style font */
+            color: #00ff41; /* Classic Matrix Green */
+            overflow: hidden;
+        }
+
+        /* Container for the logo */
+        .logo-box {
+            border: 2px solid #00ff41;
+            padding: 10px;
+            background-color: rgba(0, 255, 65, 0.1);
+            box-shadow: 0 0 15px #00ff41;
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: 180px;
+            display: block;
+            /* This filter helps the image blend into the dark theme */
+            filter: drop-shadow(0 0 5px rgba(255,255,255,0.5));
+        }
+
+        /* The Title */
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 40px;
+            margin: 10px 0;
+            text-shadow: 0 0 10px #00ff41;
+        }
+
+        /* The Sentences */
+        .sub-text {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        /* Highlighting the 'Rich' and 'Ismailia' parts in Gold */
+        .highlight {
+            color: #ffd700; /* Gold color for money/wealth */
+            text-shadow: 0 0 8px #ffd700;
+        }
+
+        /* Subtle scanning animation for effect */
+        body::before {
+            content: " ";
+            position: absolute;
+            top: 0; left: 0; bottom: 0; right: 0;
+            background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), 
+                        linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+            background-size: 100% 2px, 3px 100%;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="logo-box">
+        <img src="hacker.png" alt="Muscular Hacker Logo">
+    </div>
+
+    <h1>Muscular Hacker</h1>
+    
+    <p class="sub-text">I'm a muscular hacker focusing on hacking a <span class="highlight">rich bank</span></p>
+    
+    <p class="sub-text">If you hacked the banks with me, you'd be the <span class="highlight">richest person in Ismailia.</span></p>
+
+</body>
+</html>
